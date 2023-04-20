@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modifier">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/back"
+                android:onClick="backtoEx"/>
+            <TextView
+                android:id="@+id/tvAddMod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="AJOUT / MODIFIER EXERCICE"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvIdEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="" />
+        <TextView
+            android:id="@+id/tvIdDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'exercice"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Courte description"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edCourteDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longue description"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edLongueDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muscles sollicités (optionnel)"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edMusc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Éxécution de l'exercice (optionnel)"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edExec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vidéo"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edLien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catégories"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/rgCateg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp">
+
+            <RadioButton
+                android:id="@+id/rbBiceps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="biceps"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbAbdominaux"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="abdominaux" />
+
+            <RadioButton
+                android:id="@+id/rbCuisses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cuisses / fessiers" />
+
+            <RadioButton
+                android:id="@+id/rbPectoraux"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pectoraux" />
+
+            <RadioButton
+                android:id="@+id/rbDos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dos" />
+
+            <RadioButton
+                android:id="@+id/rbEpaules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="epaules" />
+
+            <RadioButton
+                android:id="@+id/rbTriceps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="triceps" />
+
+            <RadioButton
+                android:id="@+id/rbAvantbras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="avant-bras" />
+
+            <RadioButton
+                android:id="@+id/rbMollets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mollets" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OK"
+            android:onClick="envoyer"/>
+    </LinearLayout>
+</ScrollView>

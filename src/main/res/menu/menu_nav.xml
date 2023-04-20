@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_courriel"
+        android:icon="@drawable/contact_courriel"
+        android:title="courriel"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_tel"
+        android:icon="@drawable/contact_tel"
+        android:title="tel"
+        app:showAsAction="always"/>
+</menu>
